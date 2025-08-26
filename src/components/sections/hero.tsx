@@ -1,22 +1,16 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center text-center text-white">
-      <Image
-        src="https://github.com/drewversedesign/kaweesa-ministries/blob/main/IMG-20250518-WA0066.jpg?raw=true"
-        alt="Happy children with the Hope of Faith Foundation"
-        data-ai-hint="ugandan youth learning"
-        fill
-        className="object-cover -z-10"
-        priority
-      />
+    <section 
+      className="relative h-[60vh] min-h-[400px] flex items-center justify-center text-center text-white bg-cover bg-center"
+      style={{ backgroundImage: "url('https://github.com/drewversedesign/kaweesa-ministries/blob/main/IMG-20250518-WA0066.jpg?raw=true')" }}
+    >
       <div className="absolute inset-0 bg-black/50 -z-10" />
-      <div className="container max-w-4xl px-4 animate-fade-in">
+      <div className="container max-w-4xl px-4 animate-fade-in z-10">
         <h1 className="text-4xl font-extrabold tracking-tight font-headline sm:text-5xl md:text-6xl lg:text-7xl">
-          Empowering Communities, One Hope at a Time
+          Empowering Communities, One Hope at aTime
         </h1>
         <p className="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-neutral-200">
           Hope of Faith Foundation is dedicated to transforming lives in Uganda through education, healthcare, and sustainable development projects.
