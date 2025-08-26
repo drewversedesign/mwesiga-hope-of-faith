@@ -28,15 +28,15 @@ export default function GetInvolved() {
     <section id="get-involved" className="py-16 md:py-24 bg-secondary">
       <div className="container max-w-screen-xl">
         <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tight font-headline sm:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight font-headline sm:text-4xl animate-slide-up-fade">
                 You Can Make a Difference
             </h2>
-            <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
+            <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground animate-slide-up-fade [animation-delay:200ms]">
                 Your support, whether through donations or volunteering, is crucial to our success. Join us in building a brighter future for Uganda.
             </p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-            <Card className="shadow-lg">
+            <Card className="shadow-lg animate-slide-up-fade" style={{animationDelay: `400ms`}}>
                 <CardHeader>
                     <CardTitle className="font-headline text-2xl">Donate</CardTitle>
                     <CardDescription>Your contribution directly funds our projects and helps us reach more people in need.</CardDescription>
@@ -53,7 +53,7 @@ export default function GetInvolved() {
                 </CardFooter>
             </Card>
 
-            <div className="space-y-4">
+            <div className="space-y-4 animate-slide-up-fade" style={{animationDelay: `600ms`}}>
                 <h3 className="text-2xl font-bold font-headline">Volunteer with Us</h3>
                 <p className="text-muted-foreground">
                     Have questions about volunteering? Find answers to common queries below.

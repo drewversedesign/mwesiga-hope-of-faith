@@ -52,16 +52,16 @@ export default function Projects() {
     <section id="projects" className="py-16 md:py-24 bg-secondary">
       <div className="container max-w-screen-xl">
         <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tight font-headline sm:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight font-headline sm:text-4xl animate-slide-up-fade">
             Our Core Programs & Services
             </h2>
-            <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
+            <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground animate-slide-up-fade [animation-delay:200ms]">
             From education to empowerment, see how we're making a difference on the ground.
             </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
-            <Card key={project.title} className="overflow-hidden group transition-transform duration-300 ease-in-out hover:-translate-y-2">
+          {projects.map((project, i) => (
+            <Card key={project.title} className="overflow-hidden group transition-transform duration-300 ease-in-out hover:-translate-y-2 animate-slide-up-fade" style={{animationDelay: `${(i * 100) + 400}ms`}}>
                 <CardHeader className="p-0">
                     <div className="aspect-video relative overflow-hidden">
                         <Image 

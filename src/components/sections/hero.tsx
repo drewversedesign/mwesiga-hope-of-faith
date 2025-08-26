@@ -14,7 +14,7 @@ export default function Hero() {
         priority
       />
       <div className="absolute inset-0 bg-black/50 -z-10" />
-      <div className="container max-w-4xl px-4">
+      <div className="container max-w-4xl px-4 animate-fade-in">
         <h1 className="text-4xl font-extrabold tracking-tight font-headline sm:text-5xl md:text-6xl lg:text-7xl">
           Empowering Communities, One Hope at a Time
         </h1>

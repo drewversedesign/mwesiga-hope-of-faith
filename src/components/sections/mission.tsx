@@ -28,15 +28,15 @@ export default function Mission() {
   return (
     <section id="mission" className="py-16 md:py-24 bg-background">
       <div className="container max-w-screen-lg text-center">
-        <h2 className="text-3xl font-bold tracking-tight font-headline sm:text-4xl">
+        <h2 className="text-3xl font-bold tracking-tight font-headline sm:text-4xl animate-slide-up-fade">
           Our Mission & Core Values
         </h2>
-        <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
+        <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground animate-slide-up-fade [animation-delay:200ms]">
           Transforming lives through love and care, providing holistic care for vulnerable children in Uganda.
         </p>
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-left">
-          {values.map((value) => (
-            <Card key={value.title} className="bg-card hover:shadow-lg transition-shadow">
+          {values.map((value, i) => (
+            <Card key={value.title} className="bg-card hover:shadow-lg transition-shadow animate-slide-up-fade" style={{animationDelay: `${(i * 100) + 400}ms`}}>
               <CardHeader>
                 <div className="mb-4">{value.icon}</div>
                 <CardTitle className="font-headline">{value.title}</CardTitle>

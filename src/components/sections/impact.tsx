@@ -28,17 +28,17 @@ export default function Impact() {
     <section id="impact" className="py-16 md:py-24 bg-background">
       <div className="container max-w-screen-xl">
         <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tight font-headline sm:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight font-headline sm:text-4xl animate-slide-up-fade">
                 Our Tangible Impact
             </h2>
-            <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
+            <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground animate-slide-up-fade [animation-delay:200ms]">
                 We measure our success by the lives we change. Here's a glimpse of our achievements.
             </p>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
-            {impactStats.map((stat) => (
-                <div key={stat.label} className="text-center">
+            {impactStats.map((stat, i) => (
+                <div key={stat.label} className="text-center animate-slide-up-fade" style={{animationDelay: `${(i * 100) + 400}ms`}}>
                     <p className="text-4xl md:text-5xl font-bold text-primary font-headline">{stat.value}</p>
                     <p className="text-sm md:text-base text-muted-foreground mt-2">{stat.label}</p>
                 </div>
@@ -46,8 +46,8 @@ export default function Impact() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {testimonials.map((testimonial) => (
-                <Card key={testimonial.name} className="bg-card">
+            {testimonials.map((testimonial, i) => (
+                <Card key={testimonial.name} className="bg-card animate-slide-up-fade" style={{animationDelay: `${(i * 100) + 800}ms`}}>
                     <CardContent className="p-6">
                         <blockquote className="text-lg italic text-foreground mb-4">
                             "{testimonial.quote}"

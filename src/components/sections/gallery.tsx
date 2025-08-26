@@ -20,16 +20,16 @@ export default function Gallery() {
     <section id="gallery" className="py-16 md:py-24 bg-background">
       <div className="container max-w-screen-xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tight font-headline sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight font-headline sm:text-4xl animate-slide-up-fade">
             Photo Gallery
           </h2>
-          <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
+          <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground animate-slide-up-fade [animation-delay:200ms]">
             A glimpse into the lives we're transforming and the communities we serve.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {images.map((image, index) => (
-            <div key={index} className="w-full h-64 relative rounded-lg overflow-hidden group">
+            <div key={index} className="w-full h-64 relative rounded-lg overflow-hidden group animate-slide-up-fade" style={{animationDelay: `${(index * 100) + 400}ms`}}>
               <Image
                 src={image.src}
                 alt={image.alt}

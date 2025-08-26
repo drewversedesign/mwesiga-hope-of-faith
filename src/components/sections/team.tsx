@@ -38,16 +38,16 @@ export default function Team() {
     <section id="team" className="py-16 md:py-24 bg-background">
       <div className="container max-w-screen-xl">
         <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tight font-headline sm:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight font-headline sm:text-4xl animate-slide-up-fade">
                 Meet Our Dedicated Team
             </h2>
-            <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
+            <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground animate-slide-up-fade [animation-delay:200ms]">
                 The driving force behind our mission to empower communities and change lives.
             </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {teamMembers.map((member) => (
-            <Card key={member.name} className="text-center hover:shadow-xl transition-shadow duration-300">
+          {teamMembers.map((member, i) => (
+            <Card key={member.name} className="text-center hover:shadow-xl transition-shadow duration-300 animate-slide-up-fade" style={{animationDelay: `${(i * 100) + 400}ms`}}>
                 <CardHeader className="items-center">
                     <Avatar className="h-24 w-24 mb-4">
                         <AvatarImage src={member.avatar} alt={member.name} data-ai-hint={member.aiHint} />
