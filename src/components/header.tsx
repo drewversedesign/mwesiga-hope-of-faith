@@ -13,7 +13,7 @@ const navLinks = [
   { name: "Impact", href: "/#impact" },
   { name: "Team", href: "/#team" },
   { name: "Gallery", href: "/gallery" },
-  { name: "Get Involved", href: "/#get-involved" },
+  { name: "Volunteer", href: "/volunteer" },
   { name: "Contact", href: "/#contact" },
 ];
 
