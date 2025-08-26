@@ -7,8 +7,8 @@ export default function Hero() {
       className="relative h-[60vh] min-h-[400px] flex items-center justify-center text-center text-white bg-cover bg-center"
       style={{ backgroundImage: "url('https://github.com/drewversedesign/kaweesa-ministries/blob/main/IMG-20250518-WA0066.jpg?raw=true')" }}
     >
-      <div className="absolute inset-0 bg-black/50 -z-10" />
-      <div className="container max-w-4xl px-4 animate-fade-in z-10">
+      <div className="absolute inset-0 bg-black/50" />
+      <div className="container relative max-w-4xl px-4 animate-fade-in z-10">
         <h1 className="text-4xl font-extrabold tracking-tight font-headline sm:text-5xl md:text-6xl lg:text-7xl">
           Empowering Communities, One Hope at aTime
         </h1>
