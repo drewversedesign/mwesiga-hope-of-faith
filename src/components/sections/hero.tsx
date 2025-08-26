@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center text-center text-white">
       <Image
-        src="https://github.com/drewversedesign/kaweesa-ministries/blob/main/IMG-20250518-WA0062.jpg?raw=true"
+        src="https://github.com/drewversedesign/kaweesa-ministries/blob/main/IMG-20250518-WA0066.jpg?raw=true"
         alt="Happy children with the Hope of Faith Foundation"
         data-ai-hint="happy children"
         fill
