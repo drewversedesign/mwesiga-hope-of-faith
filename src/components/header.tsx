@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu, X, Landmark, GalleryHorizontal } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
@@ -58,13 +58,15 @@ export default function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="left">
-              <div className="flex flex-col h-full">
-                <div className="flex items-center justify-between border-b pb-4">
+              <SheetHeader className="border-b pb-4">
+                <SheetTitle>
                   <Link href="/" className="flex items-center space-x-2" onClick={() => setIsMenuOpen(false)}>
                     <Landmark className="h-6 w-6 text-primary" />
                     <span className="font-bold font-headline">Hope of Faith Foundation</span>
                   </Link>
-                </div>
+                </SheetTitle>
+              </SheetHeader>
+              <div className="flex flex-col h-full">
                 <nav className="flex flex-col gap-4 mt-8">
                   {navLinks.map((link) => (
                     <Link
