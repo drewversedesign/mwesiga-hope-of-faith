@@ -1,21 +1,26 @@
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { HandHeart, Scale, Users } from "lucide-react";
+import { HandHeart, Scale, Users, Award } from "lucide-react";
 
 const values = [
     {
         icon: <HandHeart className="w-10 h-10 text-primary" />,
-        title: "Compassion & Community",
-        description: "We are driven by a deep sense of compassion, working hand-in-hand with local communities to create lasting change."
+        title: "Love",
+        description: "Unconditional love and compassion for every child."
     },
     {
         icon: <Scale className="w-10 h-10 text-primary" />,
-        title: "Transparency & Integrity",
-        description: "We are committed to the highest standards of transparency, ensuring every donation makes a direct and measurable impact."
+        title: "Integrity",
+        description: "Highest standards of transparency and accountability."
+    },
+    {
+        icon: <Award className="w-10 h-10 text-primary" />,
+        title: "Excellence",
+        description: "Striving for excellence in every program and service."
     },
     {
         icon: <Users className="w-10 h-10 text-primary" />,
-        title: "Sustainability & Empowerment",
-        description: "Our projects are designed to be sustainable, empowering individuals and communities to build a self-reliant future."
+        title: "Community",
+        description: "Believing in the power of community to transform lives."
     }
 ];
 
@@ -27,9 +32,9 @@ export default function Mission() {
           Our Mission & Core Values
         </h2>
         <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
-          To uplift and empower vulnerable communities in Uganda by providing access to essential services and fostering opportunities for sustainable growth.
+          Transforming lives through love and care, providing holistic care for vulnerable children in Uganda.
         </p>
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-left">
           {values.map((value) => (
             <Card key={value.title} className="bg-card hover:shadow-lg transition-shadow">
               <CardHeader>

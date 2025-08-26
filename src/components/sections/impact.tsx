@@ -2,10 +2,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const impactStats = [
-    { value: "10,000+", label: "Lives Touched" },
-    { value: "50+", label: "Projects Completed" },
-    { value: "15", label: "Villages Supported" },
-    { value: "3,000+", label: "Students Educated" }
+    { value: "60+", label: "Children Supported" },
+    { value: "4", label: "Communities Served" },
+    { value: "95%", label: "School Enrollment" },
+    { value: "40+", label: "Families Empowered" }
 ];
 
 const testimonials = [
