@@ -31,7 +31,7 @@ export function Chatbot() {
                 {
                 role: "assistant",
                 content:
-                    "Hello! I'm the HopeAssist AI assistant. How can I help you learn about the Hope of Faith Foundation today?",
+                    "Hello! I'm the Hope of Faith Foundation AI assistant. How can I help you learn about the Hope of Faith Foundation today?",
                 },
             ]);
             setIsLoading(false);
@@ -92,7 +92,7 @@ export function Chatbot() {
       <div className={cn("fixed bottom-4 right-4 z-50 w-full max-w-sm transition-transform duration-300 ease-in-out", isOpen ? "translate-x-0" : "translate-x-[calc(100%+2rem)]")}>
         <Card className="flex flex-col h-[60vh] shadow-xl border-t-4 border-primary">
           <CardHeader className="flex flex-row items-center justify-between">
-            <CardTitle className="text-lg font-headline">HopeAssist AI</CardTitle>
+            <CardTitle className="text-lg font-headline">Hope of Faith Foundation AI</CardTitle>
             <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)}>
               <X className="h-4 w-4" />
               <span className="sr-only">Close chat</span>
@@ -112,7 +112,7 @@ export function Chatbot() {
                     {message.role === "assistant" && (
                       <Avatar className="w-8 h-8">
                         <AvatarFallback className="bg-primary text-primary-foreground">
-                            HA
+                            HF
                         </AvatarFallback>
                       </Avatar>
                     )}
@@ -137,7 +137,7 @@ export function Chatbot() {
                   <div className="flex items-start gap-3 justify-start">
                     <Avatar className="w-8 h-8">
                       <AvatarFallback className="bg-primary text-primary-foreground">
-                        HA
+                        HF
                       </AvatarFallback>
                     </Avatar>
                     <div className="bg-muted text-muted-foreground rounded-lg px-4 py-3 text-sm flex items-center">

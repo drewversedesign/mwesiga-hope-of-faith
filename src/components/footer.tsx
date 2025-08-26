@@ -133,7 +133,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center">
                 <Mail className="w-5 h-5 mr-3 text-primary" />
-                <a href="mailto:info@hopeassist.org" className="hover:text-primary">info@hopeassist.org</a>
+                <a href="mailto:info@hopeoffaithfoundation.org" className="hover:text-primary">info@hopeoffaithfoundation.org</a>
               </div>
               <div className="flex items-center">
                 <Phone className="w-5 h-5 mr-3 text-primary" />
@@ -153,7 +153,7 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row justify-between items-center text-sm text-muted-foreground">
            <div className="flex items-center mb-4 sm:mb-0">
              <Landmark className="h-5 w-5 mr-2 text-primary" />
-             <p>&copy; {new Date().getFullYear()} HopeAssist Foundation. All rights reserved.</p>
+             <p>&copy; {new Date().getFullYear()} Hope of Faith Foundation. All rights reserved.</p>
            </div>
            <div className="flex space-x-4">
             <Link href="#" className="hover:text-primary">Facebook</Link>

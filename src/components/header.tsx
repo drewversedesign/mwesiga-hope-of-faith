@@ -25,7 +25,7 @@ export default function Header() {
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <Landmark className="h-6 w-6 text-primary" />
             <span className="font-bold font-headline sm:inline-block">
-              HopeAssist
+              Hope of Faith Foundation
             </span>
           </Link>
           <nav className="hidden gap-6 text-sm md:flex">
@@ -60,7 +60,7 @@ export default function Header() {
                 <div className="flex items-center justify-between border-b pb-4">
                   <Link href="/" className="flex items-center space-x-2" onClick={() => setIsMenuOpen(false)}>
                     <Landmark className="h-6 w-6 text-primary" />
-                    <span className="font-bold font-headline">HopeAssist</span>
+                    <span className="font-bold font-headline">Hope of Faith Foundation</span>
                   </Link>
                 </div>
                 <nav className="flex flex-col gap-4 mt-8">

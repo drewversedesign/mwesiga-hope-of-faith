@@ -4,7 +4,7 @@ import { Toaster } from "@/components/ui/toaster"
 import { Chatbot } from "@/components/chatbot"
 
 export const metadata: Metadata = {
-  title: 'HopeAssist',
+  title: 'Hope of Faith Foundation',
   description: 'Website for Hope of Faith Foundation',
 };
 

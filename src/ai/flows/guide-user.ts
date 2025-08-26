@@ -2,7 +2,7 @@
 'use server';
 
 /**
- * @fileOverview An AI agent that guides users to relevant sections of the HopeAssist website.
+ * @fileOverview An AI agent that guides users to relevant sections of the Hope of Faith Foundation website.
  *
  * - guideUser - A function that guides users to relevant sections of the website.
  * - GuideUserInput - The input type for the guideUser function.
@@ -21,7 +21,7 @@ const GuideUserOutputSchema = z.object({
   relevantSection: z
     .string()
     .describe(
-      'The most relevant section of the HopeAssist website to address the user query. Options include: mission, projects, impact, donate, volunteer, contact.'
+      'The most relevant section of the Hope of Faith Foundation website to address the user query. Options include: mission, projects, impact, donate, volunteer, contact.'
     ),
   reason: z.string().describe('The reason why this section is the most relevant.'),
 });
@@ -35,7 +35,7 @@ const prompt = ai.definePrompt({
   name: 'guideUserPrompt',
   input: {schema: GuideUserInputSchema},
   output: {schema: GuideUserOutputSchema},
-  prompt: `You are an AI assistant helping users navigate the HopeAssist website.
+  prompt: `You are an AI assistant helping users navigate the Hope of Faith Foundation website.
 
   A user has the following question: {{{query}}}
 
