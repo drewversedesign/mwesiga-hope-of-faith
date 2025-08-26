@@ -2,18 +2,19 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Menu, X, Landmark } from "lucide-react";
+import { Menu, X, Landmark, GalleryHorizontal } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
-  { name: "Mission", href: "#mission" },
-  { name: "Projects", href: "#projects" },
-  { name: "Impact", href: "#impact" },
-  { name: "Team", href: "#team" },
-  { name: "Get Involved", href: "#get-involved" },
-  { name: "Contact", href: "#contact" },
+  { name: "Mission", href: "/#mission" },
+  { name: "Projects", href: "/#projects" },
+  { name: "Impact", href: "/#impact" },
+  { name: "Team", href: "/#team" },
+  { name: "Gallery", href: "/gallery" },
+  { name: "Get Involved", href: "/#get-involved" },
+  { name: "Contact", href: "/#contact" },
 ];
 
 export default function Header() {
@@ -43,7 +44,7 @@ export default function Header() {
         </div>
         <div className="flex flex-1 items-center justify-end space-x-2">
           <Button asChild>
-            <Link href="#get-involved">Donate</Link>
+            <Link href="/#get-involved">Donate</Link>
           </Button>
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
             <SheetTrigger asChild>
