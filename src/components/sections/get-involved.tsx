@@ -2,7 +2,28 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, BookOpen, Utensils, CalendarHeart } from "lucide-react";
+
+const volunteerOpportunities = [
+    {
+        icon: <BookOpen className="w-8 h-8 text-primary" />,
+        title: "Teaching Assistant",
+        commitment: "4 hours/week",
+        description: "Help children with homework and reading skills."
+    },
+    {
+        icon: <Utensils className="w-8 h-8 text-primary" />,
+        title: "Meal Preparation",
+        commitment: "2 hours/week",
+        description: "Assist in preparing nutritious meals for children."
+    },
+    {
+        icon: <CalendarHeart className="w-8 h-8 text-primary" />,
+        title: "Event Coordinator",
+        commitment: "Flexible",
+        description: "Help organize and run community events."
+    }
+];
 
 const faqs = [
     {
@@ -35,10 +56,10 @@ export default function GetInvolved() {
                 Your support, whether through donations or volunteering, is crucial to our success. Join us in building a brighter future for Uganda.
             </p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-            <Card className="shadow-lg animate-slide-up-fade" style={{animationDelay: `400ms`}}>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <Card className="shadow-lg animate-slide-up-fade order-2 lg:order-1" style={{animationDelay: `400ms`}}>
                 <CardHeader>
-                    <CardTitle className="font-headline text-2xl">Donate</CardTitle>
+                    <CardTitle className="font-headline text-2xl">Donate to Our Cause</CardTitle>
                     <CardDescription>Your contribution directly funds our projects and helps us reach more people in need.</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
@@ -53,26 +74,44 @@ export default function GetInvolved() {
                 </CardFooter>
             </Card>
 
-            <div className="space-y-4 animate-slide-up-fade" style={{animationDelay: `600ms`}}>
-                <h3 className="text-2xl font-bold font-headline">Volunteer with Us</h3>
-                <p className="text-muted-foreground">
-                    Have questions about volunteering? Find answers to common queries below.
-                </p>
-                <Accordion type="single" collapsible className="w-full">
-                    {faqs.map((faq, index) => (
-                        <AccordionItem key={index} value={`item-${index}`}>
-                            <AccordionTrigger>{faq.question}</AccordionTrigger>
-                            <AccordionContent>
-                                {faq.answer}
-                            </AccordionContent>
-                        </AccordionItem>
-                    ))}
-                </Accordion>
-                <Button variant="link" asChild className="text-accent hover:text-accent/80 p-0 h-auto">
-                    <Link href="#contact">
-                        Apply to Volunteer <ArrowRight className="w-4 h-4 ml-2"/>
-                    </Link>
-                </Button>
+            <div className="space-y-8 order-1 lg:order-2">
+                <div className="animate-slide-up-fade" style={{animationDelay: `600ms`}}>
+                    <h3 className="text-2xl font-bold font-headline mb-4">Volunteer With Us</h3>
+                     <p className="text-muted-foreground mb-6">
+                        Join our mission and make a direct impact in children's lives through volunteering.
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        {volunteerOpportunities.map((opp, index) => (
+                            <Card key={index} className="text-center">
+                                <CardContent className="p-6">
+                                    <div className="flex justify-center mb-3">{opp.icon}</div>
+                                    <h4 className="font-bold font-headline">{opp.title}</h4>
+                                    <p className="text-sm text-primary font-semibold">{opp.commitment}</p>
+                                    <p className="text-xs text-muted-foreground mt-2">{opp.description}</p>
+                                </CardContent>
+                            </Card>
+                        ))}
+                    </div>
+                </div>
+
+                <div className="space-y-4 animate-slide-up-fade" style={{animationDelay: `800ms`}}>
+                    <h3 className="text-xl font-bold font-headline">Volunteer FAQs</h3>
+                    <Accordion type="single" collapsible className="w-full">
+                        {faqs.map((faq, index) => (
+                            <AccordionItem key={index} value={`item-${index}`}>
+                                <AccordionTrigger>{faq.question}</AccordionTrigger>
+                                <AccordionContent>
+                                    {faq.answer}
+                                </AccordionContent>
+                            </AccordionItem>
+                        ))}
+                    </Accordion>
+                    <Button variant="link" asChild className="text-accent hover:text-accent/80 p-0 h-auto">
+                        <Link href="#contact">
+                            Apply to Volunteer <ArrowRight className="w-4 h-4 ml-2"/>
+                        </Link>
+                    </Button>
+                </div>
             </div>
         </div>
       </div>
