@@ -8,7 +8,7 @@ export default function Hero() {
       <Image
         src="https://github.com/drewversedesign/kaweesa-ministries/blob/main/IMG-20250518-WA0066.jpg?raw=true"
         alt="Happy children with the Hope of Faith Foundation"
-        data-ai-hint="happy children"
+        data-ai-hint="ugandan youth learning"
         fill
         className="object-cover -z-10"
         priority
