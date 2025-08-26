@@ -4,6 +4,7 @@ import Hero from '@/components/sections/hero';
 import Mission from '@/components/sections/mission';
 import Projects from '@/components/sections/projects';
 import Impact from '@/components/sections/impact';
+import Team from '@/components/sections/team';
 import GetInvolved from '@/components/sections/get-involved';
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
         <Mission />
         <Projects />
         <Impact />
+        <Team />
         <GetInvolved />
       </main>
       <Footer />
