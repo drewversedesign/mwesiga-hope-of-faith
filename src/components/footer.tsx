@@ -3,7 +3,7 @@
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import * as z from "zod"
-import { Mail, Phone, MapPin, Landmark, FileText } from "lucide-react"
+import { Mail, Phone, MapPin, HandHeart, FileText } from "lucide-react"
 import Link from "next/link"
 
 import { Button } from "@/components/ui/button"
@@ -63,7 +63,7 @@ export default function Footer() {
           {/* Column 1: About & Contact Info */}
           <div className="space-y-6">
             <Link href="/" className="flex items-center space-x-2">
-                <Landmark className="h-7 w-7 text-primary" />
+                <HandHeart className="h-7 w-7 text-primary" />
                 <span className="text-xl font-bold font-headline text-white">
                 Hope of Faith Foundation
                 </span>
@@ -150,5 +150,3 @@ export default function Footer() {
     </footer>
   )
 }
-
-    

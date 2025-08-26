@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Menu, X, Landmark, GalleryHorizontal } from "lucide-react";
+import { Menu, X, HandHeart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
@@ -25,7 +25,7 @@ export default function Header() {
       <div className="container flex h-14 max-w-screen-2xl items-center">
         <div className="mr-4 flex items-center">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Landmark className="h-6 w-6 text-primary" />
+            <HandHeart className="h-6 w-6 text-primary" />
             <span className="font-bold font-headline sm:inline-block">
               Hope of Faith Foundation
             </span>
@@ -61,7 +61,7 @@ export default function Header() {
               <SheetHeader className="border-b pb-4">
                 <SheetTitle>
                   <Link href="/" className="flex items-center space-x-2" onClick={() => setIsMenuOpen(false)}>
-                    <Landmark className="h-6 w-6 text-primary" />
+                    <HandHeart className="h-6 w-6 text-primary" />
                     <span className="font-bold font-headline">Hope of Faith Foundation</span>
                   </Link>
                 </SheetTitle>
