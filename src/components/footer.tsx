@@ -4,7 +4,6 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import * as z from "zod"
 import { Mail, Phone, MapPin, Landmark, FileText } from "lucide-react"
-import Image from "next/image"
 import Link from "next/link"
 
 import { Button } from "@/components/ui/button"
@@ -58,75 +57,21 @@ export default function Footer() {
   }
 
   return (
-    <footer id="contact" className="bg-secondary w-full py-12 md:py-20">
-      <div className="container max-w-screen-xl grid grid-cols-1 md:grid-cols-2 gap-12">
-        <div>
-          <h2 className="text-3xl font-bold font-headline mb-2">Get in Touch</h2>
-          <p className="text-muted-foreground mb-8">
-            We'd love to hear from you. Please fill out the form, and we'll get back to you as soon as possible.
-          </p>
-          <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-              <FormField
-                control={form.control}
-                name="name"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Full Name</FormLabel>
-                    <FormControl>
-                      <Input placeholder="John Doe" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="email"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Email Address</FormLabel>
-                    <FormControl>
-                      <Input placeholder="johndoe@example.com" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="subject"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Subject</FormLabel>
-                    <FormControl>
-                      <Input placeholder="Regarding your project..." {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="message"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Message</FormLabel>
-                    <FormControl>
-                      <Textarea placeholder="Your message here..." {...field} className="min-h-[120px]" />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <Button type="submit" className="bg-accent hover:bg-accent/90 text-accent-foreground">Send Message</Button>
-            </form>
-          </Form>
-        </div>
-        <div className="space-y-8">
-          <div>
-            <h3 className="text-xl font-semibold font-headline mb-4">Contact Information</h3>
-            <div className="space-y-3 text-muted-foreground">
+    <footer id="contact" className="bg-gray-900 text-gray-300 w-full pt-16 pb-8">
+      <div className="container max-w-screen-xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+          {/* Column 1: About & Contact Info */}
+          <div className="space-y-6">
+            <Link href="/" className="flex items-center space-x-2">
+                <Landmark className="h-7 w-7 text-primary" />
+                <span className="text-xl font-bold font-headline text-white">
+                Hope of Faith Foundation
+                </span>
+            </Link>
+            <p className="text-gray-400">
+                Transforming lives through love and care, providing holistic care for vulnerable children in Uganda.
+            </p>
+            <div className="space-y-3">
               <div className="flex items-start">
                 <MapPin className="w-5 h-5 mr-3 mt-1 text-primary shrink-0" />
                 <span>Kampala, Uganda</span>
@@ -141,31 +86,69 @@ export default function Footer() {
               </div>
                <div className="flex items-start">
                 <FileText className="w-5 h-5 mr-3 mt-1 text-primary shrink-0" />
-                <span>Registration No: 80020002320853</span>
+                <span>Reg No: 80020002320853</span>
               </div>
             </div>
           </div>
-          <div>
-            <h3 className="text-xl font-semibold font-headline mb-4">Our Location</h3>
-            <div className="aspect-video w-full overflow-hidden rounded-lg border">
-              <Image src="https://github.com/drewversedesign/kaweesa-ministries/blob/main/IMG-20250518-WA0057.jpg?raw=true" alt="Map of Uganda" data-ai-hint="uganda map" width={600} height={338} className="w-full h-full object-cover" />
-            </div>
+
+          {/* Column 2: Quick Links */}
+          <div className="space-y-6">
+            <h3 className="text-xl font-semibold font-headline text-white">Quick Links</h3>
+            <ul className="space-y-2">
+                <li><Link href="/#mission" className="hover:text-primary transition-colors">Our Mission</Link></li>
+                <li><Link href="/#projects" className="hover:text-primary transition-colors">Projects</Link></li>
+                <li><Link href="/gallery" className="hover:text-primary transition-colors">Gallery</Link></li>
+                <li><Link href="/#get-involved" className="hover:text-primary transition-colors">Get Involved</Link></li>
+            </ul>
+          </div>
+          
+          {/* Column 3: Contact Form */}
+          <div className="space-y-6">
+            <h3 className="text-xl font-semibold font-headline text-white">Get in Touch</h3>
+            <Form {...form}>
+              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+                <FormField
+                  control={form.control}
+                  name="email"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormControl>
+                        <Input type="email" placeholder="Your Email Address" {...field} className="bg-gray-800 border-gray-700 text-white placeholder-gray-500 focus:ring-primary focus:border-primary" />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="message"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormControl>
+                        <Textarea placeholder="Your message..." {...field} className="min-h-[100px] bg-gray-800 border-gray-700 text-white placeholder-gray-500 focus:ring-primary focus:border-primary" />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <Button type="submit" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">Send Message</Button>
+              </form>
+            </Form>
           </div>
         </div>
-      </div>
-      <div className="container max-w-screen-xl mt-16 pt-8 border-t">
-        <div className="flex flex-col sm:flex-row justify-between items-center text-sm text-muted-foreground">
-           <div className="flex items-center mb-4 sm:mb-0">
-             <Landmark className="h-5 w-5 mr-2 text-primary" />
-             <p>&copy; {new Date().getFullYear()} Hope of Faith Foundation. All rights reserved.</p>
-           </div>
+
+        {/* Bottom Bar */}
+        <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center text-sm">
+           <p className="text-gray-400 mb-4 sm:mb-0">&copy; {new Date().getFullYear()} Hope of Faith Foundation. All Rights Reserved.</p>
            <div className="flex space-x-4">
-            <Link href="#" className="hover:text-primary">Facebook</Link>
-            <Link href="#" className="hover:text-primary">Twitter</Link>
-            <Link href="#" className="hover:text-primary">Instagram</Link>
+            <Link href="#" className="text-gray-400 hover:text-primary">Facebook</Link>
+            <Link href="#" className="text-gray-400 hover:text-primary">Twitter</Link>
+            <Link href="#" className="text-gray-400 hover:text-primary">Instagram</Link>
            </div>
         </div>
       </div>
     </footer>
   )
 }
+
+    
