@@ -34,7 +34,7 @@ export default function Mission() {
         <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground animate-slide-up-fade [animation-delay:200ms]">
           Transforming lives through love and care, providing holistic care for vulnerable children in Uganda.
         </p>
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-left">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-8 text-left">
           {values.map((value, i) => (
             <Card key={value.title} className="bg-card hover:shadow-lg transition-shadow animate-slide-up-fade" style={{animationDelay: `${(i * 100) + 400}ms`}}>
               <CardHeader>
