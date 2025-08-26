@@ -13,13 +13,13 @@ const testimonials = [
         quote: "The new well has changed everything for our village. Our children are healthier, and we spend less time fetching water and more time on our farms.",
         name: "Aisha N.",
         role: "Community Elder",
-        avatar: "https://picsum.photos/100/100?random=5"
+        avatar: "https://github.com/drewversedesign/kaweesa-ministries/blob/main/IMG-20250518-WA0064.jpg?raw=true"
     },
     {
         quote: "My children can now go to a real school. The Hope of Faith Foundation has given them a future I could only dream of.",
         name: "David O.",
         role: "Parent",
-        avatar: "https://picsum.photos/100/100?random=6"
+        avatar: "https://github.com/drewversedesign/kaweesa-ministries/blob/main/IMG-20250518-WA0172.jpg?raw=true"
     }
 ];
 

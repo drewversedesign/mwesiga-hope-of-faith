@@ -144,7 +144,7 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-semibold font-headline mb-4">Our Location</h3>
             <div className="aspect-video w-full overflow-hidden rounded-lg border">
-              <Image src="https://picsum.photos/600/338" alt="Map of Uganda" data-ai-hint="uganda map" width={600} height={338} className="w-full h-full object-cover" />
+              <Image src="https://github.com/drewversedesign/kaweesa-ministries/blob/main/IMG-20250518-WA0057.jpg?raw=true" alt="Map of Uganda" data-ai-hint="uganda map" width={600} height={338} className="w-full h-full object-cover" />
             </div>
           </div>
         </div>

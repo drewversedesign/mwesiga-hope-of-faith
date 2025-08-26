@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center text-center text-white">
       <Image
-        src="https://picsum.photos/1920/1080"
+        src="https://github.com/drewversedesign/kaweesa-ministries/blob/main/IMG-20250518-WA0161.jpg?raw=true"
         alt="Children in Uganda smiling"
         data-ai-hint="uganda children smiling"
         fill

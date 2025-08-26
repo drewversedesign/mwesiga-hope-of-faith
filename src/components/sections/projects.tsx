@@ -7,28 +7,28 @@ const projects = [
         title: "Clean Water Initiative",
         category: "Healthcare",
         description: "Bringing safe and accessible drinking water to rural villages by constructing wells and water purification systems.",
-        image: "https://picsum.photos/600/400?random=1",
+        image: "https://github.com/drewversedesign/kaweesa-ministries/blob/main/IMG-20250518-WA0163.jpg?raw=true",
         aiHint: "african village water"
     },
     {
         title: "Primary School Build",
         category: "Education",
         description: "Constructing and equipping a new primary school to provide quality education for over 300 children in an underserved area.",
-        image: "https://picsum.photos/600/400?random=2",
+        image: "https://github.com/drewversedesign/kaweesa-ministries/blob/main/IMG-20250518-WA0164.jpg?raw=true",
         aiHint: "ugandan classroom"
     },
     {
         title: "Maternal Health Clinic",
         category: "Healthcare",
         description: "Establishing a clinic focused on providing essential pre-natal and post-natal care for mothers and infants.",
-        image: "https://picsum.photos/600/400?random=3",
+        image: "https://github.com/drewversedesign/kaweesa-ministries/blob/main/IMG-20250518-WA0168.jpg?raw=true",
         aiHint: "ugandan mother child"
     },
     {
         title: "Youth Skills Training",
         category: "Empowerment",
         description: "A vocational training program teaching practical skills like tailoring and carpentry to empower young adults.",
-        image: "https://picsum.photos/600/400?random=4",
+        image: "https://github.com/drewversedesign/kaweesa-ministries/blob/main/IMG-20250518-WA0066.jpg?raw=true",
         aiHint: "ugandan youth learning"
     }
 ];
@@ -54,8 +54,9 @@ export default function Projects() {
                             src={project.image}
                             alt={project.title}
                             data-ai-hint={project.aiHint}
-                            fill
-                            className="object-cover group-hover:scale-105 transition-transform duration-300 ease-in-out"
+                            width={600}
+                            height={400}
+                            className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300 ease-in-out"
                         />
                     </div>
                 </CardHeader>
