@@ -13,6 +13,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 
 export default function Home() {
+  console.log("Forcing a rebuild to clear any potential caching issues.");
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <Header />
