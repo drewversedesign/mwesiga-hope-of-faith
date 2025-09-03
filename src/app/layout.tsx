@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   title: 'Hope of Faith Foundation | Empowering Ugandan Children',
   description: 'The Hope of Faith Foundation is a non-profit organization dedicated to transforming the lives of vulnerable children in Uganda through education, healthcare, and community empowerment.',
   keywords: ['Hope of Faith Foundation', 'Uganda charity', 'non-profit Uganda', 'empower children Uganda', 'education in Uganda', 'healthcare in Uganda', 'vulnerable children support'],
+  icons: {
+    icon: 'https://github.com/drewversedesign/mwesigwa-pics/blob/main/Blue%20Simple%20Illustrative%20Charity%20Foundation%20Logo.png?raw=true',
+  },
   openGraph: {
     title: 'Hope of Faith Foundation | Empowering Ugandan Children',
     description: 'Join us in transforming the lives of vulnerable children in Uganda through holistic care, education, and sustainable development projects.',
