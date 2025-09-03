@@ -30,8 +30,8 @@ const projects = [
             "Health education"
         ],
         metric: "45+ children",
-        image: "https://github.com/drewversedesign/kaweesa-ministries/blob/main/IMG-20250518-WA0168.jpg?raw=true",
-        aiHint: "ugandan mother child"
+        image: "https://github.com/drewversedesign/Derrick-Charity-Home/blob/main/elite_foundation_uganda-18-05-2025-0020.webp?raw=true",
+        aiHint: "health nutrition"
     },
     {
         title: "Child Protection Services",
