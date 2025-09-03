@@ -92,7 +92,7 @@ export function Chatbot() {
       <div className={cn("fixed bottom-4 right-4 z-50 w-full max-w-sm transition-transform duration-300 ease-in-out", isOpen ? "translate-x-0" : "translate-x-[calc(100%+2rem)]")}>
         <Card className="flex flex-col h-[60vh] shadow-xl border-t-4 border-primary">
           <CardHeader className="flex flex-row items-center justify-between">
-            <CardTitle className="text-lg font-headline">Hope of Faith Foundation AI</CardTitle>
+            <CardTitle className="text-lg font-headline">Hope of Faith Foundation</CardTitle>
             <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)}>
               <X className="h-4 w-4" />
               <span className="sr-only">Close chat</span>
