@@ -24,10 +24,10 @@ export const metadata: Metadata = {
     siteName: 'Hope of Faith Foundation',
     images: [
       {
-        url: 'https://github.com/drewversedesign/kaweesa-ministries/blob/main/IMG-20250518-WA0062.jpg?raw=true',
+        url: 'https://github.com/drewversedesign/mwesigwa-pics/blob/main/Blue%20Simple%20Illustrative%20Charity%20Foundation%20Logo.png?raw=true',
         width: 1200,
         height: 630,
-        alt: 'Hope of Faith Foundation - Empowering Communities in Uganda',
+        alt: 'Hope of Faith Foundation Logo',
       },
     ],
     locale: 'en_US',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Hope of Faith Foundation | Empowering Ugandan Children',
     description: 'Support our mission to provide education, healthcare, and a loving community for vulnerable children in Uganda.',
-    images: ['https://github.com/drewversedesign/kaweesa-ministries/blob/main/IMG-20250518-WA0062.jpg?raw=true'],
+    images: ['https://github.com/drewversedesign/mwesigwa-pics/blob/main/Blue%20Simple%20Illustrative%20Charity%20Foundation%20Logo.png?raw=true'],
   },
   robots: {
     index: true,
