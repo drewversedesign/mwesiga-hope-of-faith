@@ -86,7 +86,7 @@ const projects = [
             "Entrepreneurship guidance"
         ],
         metric: "12+ youth",
-        image: "https://github.com/drewversedesign/kaweesa-ministries/blob/main/IMG-20250518-WA0161.jpg?raw=true",
+        image: "https://github.com/drewversedesign/mwesigwa-pics/blob/main/1fhx36s7iv4ho3g12455k80cynx66wxs.webp?raw=true",
         aiHint: "vocational training"
     }
 ];
