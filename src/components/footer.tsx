@@ -82,7 +82,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center">
                 <Phone className="w-5 h-5 mr-3 text-primary" />
-                <a href="tel:+256123456789" className="hover:text-primary">+256 123 456 789</a>
+                <a href="tel:+256773457913" className="hover:text-primary">+256 773 457 913</a>
               </div>
                <div className="flex items-start">
                 <FileText className="w-5 h-5 mr-3 mt-1 text-primary shrink-0" />
