@@ -72,7 +72,7 @@ const projects = [
             "Crisis intervention"
         ],
         metric: "20+ families",
-        image: "https://github.com/drewversedesign/kaweesa-ministries/blob/main/IMG-20250518-WA0053.jpg?raw=true",
+        image: "https://github.com/drewversedesign/mwesigwa-pics/blob/main/ishbshdiueendmnc.webp?raw=true",
         aiHint: "food aid"
     },
     {
