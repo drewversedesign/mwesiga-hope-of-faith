@@ -19,7 +19,7 @@ export default function Hero() {
           <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
             <Link href="#get-involved">Donate Now</Link>
           </Button>
-          <Button size="lg" variant="outline" asChild className="border-white text-white hover:bg-white/10">
+          <Button size="lg" variant="outline" asChild className="border-white text-white bg-transparent hover:bg-white/10">
             <Link href="#projects">Our Projects</Link>
           </Button>
         </div>
