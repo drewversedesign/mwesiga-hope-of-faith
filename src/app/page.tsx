@@ -5,7 +5,6 @@ import Mission from '@/components/sections/mission';
 import Approach from '@/components/sections/approach';
 import Projects from '@/components/sections/projects';
 import Impact from '@/components/sections/impact';
-import Team from '@/components/sections/team';
 import Testimonials from '@/components/sections/testimonials';
 import GetInvolved from '@/components/sections/get-involved';
 import Link from 'next/link';
@@ -23,7 +22,6 @@ export default function Home() {
         <Approach />
         <Projects />
         <Impact />
-        <Team />
         <Testimonials />
         <section className="py-16 md:py-24 bg-secondary text-center">
             <div className="container">
